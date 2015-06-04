@@ -25,13 +25,13 @@ and open the template in the editor.
                     <div class="form-group">
                         <label for="inputEmail3" class="col-sm-2 control-label">Nome</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="inputEmail3" placeholder="Nome">
+                            <input type="text"  id="input-Nome" class="form-control"  placeholder="Nome">
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="inputPassword3" class="col-sm-2 control-label">Endereço</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="inputPassword3" placeholder="Endereco">
+                            <input type="text" class="form-control" id="input-Endereço" placeholder="Endereco">
                         </div>
                         <div class="form-group">
                             <label for="inputEmail3" class="col-sm-2 control-label">Sexo</label>
@@ -57,7 +57,7 @@ and open the template in the editor.
                         </div>
                         <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-10">
-                                <button type="submit" class="btn btn-success">Cadastrar</button>
+                                <button type="submit" id="btn-enviar"           class="btn btn-success">Cadastrar</button>
                             </div>
                         </div>
                 </form>
@@ -73,6 +73,29 @@ and open the template in the editor.
         <div class="row">
             <div class="col-md-6">.col-md-6</div>
             <div class="col-md-6">.col-md-6</div>
+
+
+
+            <script>
+
+                $('#btn-enviar').click(function () {
+                    if ($('#input-nome').val() == '') {
+                        alert('preencha o nome')
+                
+                      
+                  }
+                  
+                   $('#btn-enviar').click(function () {
+                    if ($('#input-Endereco').val() == '') {
+                        alert('preencha o endereço')
+                    }
+                })
+                
+                
+
+
+            </script>
+
 
 
 
